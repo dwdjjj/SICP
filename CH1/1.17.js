@@ -21,3 +21,4 @@ function fast_times(a, b) {
 }
 
 console.log(fast_times(3, 4));
+console.log(fast_times(2, 5));
