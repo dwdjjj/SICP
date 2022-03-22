@@ -24,11 +24,14 @@ console.log(integral(cube, 0, 1, 0.001)); // 0.249999875000001
 
 // 심슨의 규칙따른 정적분
 function integral_simpson(f, a, b, n) {
+  const h = (b - a) / n;
   function y(k) {
     return f(a + k * h);
   }
   function add_h(k) {
     return k === 0 || k === n ? y(k) : is_even(k) ? 2 * y(k) : 4 * y(k);
   }
-  
+  return (h / 3) * sum(add_h, 0, (x) => x + 1, n);
 }
+
+console.log(integral_simpson(cube, 0, 1, 100));
