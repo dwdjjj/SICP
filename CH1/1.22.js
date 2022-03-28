@@ -66,3 +66,4 @@ console.log(search_for_primes2(10000, 3));
 // return n % 2 === 0;
 // RangeError: Maximum call stack size exceeded
 // 에러뜸
+// 위 에러는 노드에서 제한된 사이즈를 넘어서 발생함.

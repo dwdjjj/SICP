@@ -35,3 +35,4 @@ function integral_simpson(f, a, b, n) {
 }
 
 console.log(integral_simpson(cube, 0, 1, 100));
+// 심슨의 정적분이 더 정확한 모습!
