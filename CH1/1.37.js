@@ -54,7 +54,7 @@ function fixed_point() {
   }
   function try_with(k, guess) {
     console.log(k);
-    const next = cont_frac_iter(
+    const next = cont_frac_i(
       (i) => 1,
       (i) => 1,
       k + 1
